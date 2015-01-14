@@ -1,0 +1,50 @@
+
+local 
+	ga/naar/source dir
+	
+	init
+		git init
+		git add .
+		git commit -m "Een message"
+		
+	git status			//overzicht van alle wijzigingen
+		groen			//changed - nog geen commit
+		rood			//changed - nog niet added
+		rood			//not tracked - bv database
+	
+	nieuwe file toevoegen
+		git add <filename>
+		
+	na wijziging in source file
+		git commit -a -m "Een beschrijving"		//commit van alle gewijzigde files
+		
+	historie oproepen
+		git log
+		
+	files uitsluiten
+		in .gitignore	//bv *.pyc
+		
+	file uit git verwijderen
+		git rm -r -- oud/						//recursief als het een dir is
+		git commit -m "Oud verwijderd"			//verplichte stap
+
+***
+
+distributed	
+	bestaand repository clonen
+		git clone http://url/of/repository
+	
+	git remote		//overview of distributed files
+	git fetch		//fetch the changes in distributed scenario
+	git merge		//combine the changes in distributed scenario
+	git pull		//fetch EN merge in één beweging
+	git push		//push my content to others
+	
+branches
+	standaard staat een project in de branch "default"
+	gebruik kan per topic (bv een feature inbouwen)
+	gebruik kan per versie (1.0, 1.1)
+	een branch is in feite een pointer naar een specifieke commit
+	je kunt tenslotte verschillende branches samenvoegen
+	
+	
